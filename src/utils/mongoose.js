@@ -15,5 +15,5 @@ export async  function connectDB(){
 	conn.isConnected = db.connections[0].readyState
 } 
 
-connection.on('connect',()=> console.log('conectado'))
+connection.on('connected',()=> console.log('conectado'))
 connection.on('error',()=> console.log('error al conectarse a la base de datos'))
